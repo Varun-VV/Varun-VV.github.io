@@ -167,6 +167,19 @@
   
 
       
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../../jokes/just_for_fun/" class="md-tabs__link">
+        Jokes
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -346,6 +359,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#testing-and-validation" class="md-nav__link">
+    Testing and Validation
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -361,6 +381,43 @@
   <li class="md-nav__item">
     <a href="../server_manage/" class="md-nav__link">
       Manage
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      Jokes
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Jokes" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Jokes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../jokes/just_for_fun/" class="md-nav__link">
+      Just for fun
     </a>
   </li>
 
@@ -475,6 +532,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#testing-and-validation" class="md-nav__link">
+    Testing and Validation
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -540,12 +604,17 @@ Copy the backups to server with scp command : <code>scp &lt;folder&gt; &lt;user&
 <p>After the install is done, some more optional software may be required. Install these...</p>
 <pre><code>sudo apt-get install default-jre
 sudo apt-get install curl
+sudo apt-get install php-curl
+sudo service apache2 restart
 </code></pre>
 <p>After all the software is installed and the backup is also restored... make sure we update certificates.
 - Check the SSL certificates are restored
 - Copy the main server certificate to other services like: Postfix, Dovecot, Usermin, Virtualmin etc.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>Even after following everything, something will evenutally not work... </p>
+<h2 id="testing-and-validation">Testing and Validation</h2>
+<p>Do some smoke tests
+- Check in HanuGCM app. Do a simple ping to see if everything is working fine.</p>
                 
               
               
