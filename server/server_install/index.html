@@ -158,10 +158,8 @@
     <li class="md-tabs__item">
       
       
-        
-      
-      <a href="./" class="md-tabs__link md-tabs__link--active">
-        Server Setup
+      <a href="../../projects/hanudroid/" class="md-tabs__link">
+        Projects
       </a>
     </li>
   
@@ -173,8 +171,10 @@
     <li class="md-tabs__item">
       
       
-      <a href="../../jokes/just_for_fun/" class="md-tabs__link">
-        Jokes
+        
+      
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Server Setup
       </a>
     </li>
   
@@ -223,18 +223,91 @@
       
       
 
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Projects
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Projects" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Projects
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/hanudroid/" class="md-nav__link">
+      HanuDroid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/hanudows/" class="md-nav__link">
+      HanuDows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/hanuquiz/" class="md-nav__link">
+      HanuQuiz
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/hsm/" class="md-nav__link">
+      Hanu Society Management
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
-    <label class="md-nav__link" for="nav-2">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    <label class="md-nav__link" for="nav-3">
       Server Setup
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Server Setup" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
+      <label class="md-nav__title" for="nav-3">
         <span class="md-nav__icon md-icon"></span>
         Server Setup
       </label>
@@ -381,43 +454,6 @@
   <li class="md-nav__item">
     <a href="../server_manage/" class="md-nav__link">
       Manage
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
-    <label class="md-nav__link" for="nav-3">
-      Jokes
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Jokes" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon"></span>
-        Jokes
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../jokes/just_for_fun/" class="md-nav__link">
-      Just for fun
     </a>
   </li>
 
@@ -604,6 +640,7 @@ Copy the backups to server with scp command : <code>scp &lt;folder&gt; &lt;user&
 <p>After the install is done, some more optional software may be required. Install these...</p>
 <pre><code>sudo apt-get install default-jre
 sudo apt-get install curl
+sudo apt-get install composer
 sudo apt-get install php-curl
 sudo service apache2 restart
 </code></pre>
@@ -613,8 +650,11 @@ sudo service apache2 restart
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>Even after following everything, something will evenutally not work... </p>
 <h2 id="testing-and-validation">Testing and Validation</h2>
-<p>Do some smoke tests
-- Check in HanuGCM app. Do a simple ping to see if everything is working fine.</p>
+<p>Do some smoke tests</p>
+<ul>
+<li>Check in HanuGCM app. Do a simple ping to see if everything is working fine.</li>
+<li>Check in one of the post utility apps. Query, approve and reject posts</li>
+</ul>
                 
               
               
@@ -633,7 +673,7 @@ sudo service apache2 restart
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../.." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../projects/hsm/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -642,7 +682,7 @@ sudo service apache2 restart
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Home
+                Hanu Society Management
               </div>
             </div>
           </a>
